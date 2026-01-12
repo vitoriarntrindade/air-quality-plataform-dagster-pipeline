@@ -1,0 +1,60 @@
+{
+  "expectations": [
+    {
+      "id": "066cb2b3-1a03-4272-898b-69c641387920",
+      "kwargs": {
+        "column": "location_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "e7f32db6-a2d4-43f3-8be9-b83da91336e2",
+      "kwargs": {
+        "column": "parameter"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a20665ad-4961-4373-aa7d-cb6ab1d6d283",
+      "kwargs": {
+        "column": "value"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "714885d5-771d-4f14-a617-aa622570d68f",
+      "kwargs": {
+        "column": "value",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "903cf2a4-263b-4af6-8560-5eaaa6fd5720",
+      "kwargs": {
+        "column_list": [
+          "location_id",
+          "parameter",
+          "datetime"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_compound_columns_to_be_unique"
+    }
+  ],
+  "id": "988c378f-bc3f-4a42-8116-33287d2303f4",
+  "meta": {
+    "great_expectations_version": "1.10.0"
+  },
+  "name": "silver.measurements",
+  "notes": null
+}

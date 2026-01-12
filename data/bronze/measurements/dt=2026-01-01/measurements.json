@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "source": "mock",
+    "dt": "2026-01-01",
+    "generated_at_utc": "2026-01-12T02:02:18.499049+00:00"
+  },
+  "results": [
+    {
+      "locationId": 123,
+      "city": "São Paulo",
+      "country": "BR",
+      "parameter": "pm25",
+      "value": 12.3,
+      "unit": "µg/m³",
+      "datetime": "2026-01-01T12:00:00+00:00"
+    }
+  ]
+}

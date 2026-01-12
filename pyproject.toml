@@ -1,0 +1,16 @@
+[project]
+name = "air-quality-platform"
+version = "0.1.0"
+description = "Pipeline de engenharia de dados para qualidade do ar com Dagster, Great Expectations, DuckDB e Metabase"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dagster>=1.12.10",
+    "dagster-webserver>=1.12.10",
+    "duckdb>=1.4.3",
+    "great-expectations>=1.10.0",
+    "pandas>=2.3.3",
+    "polars>=1.37.0",
+    "pyarrow>=22.0.0",
+    "pydantic>=2.12.5",
+]
