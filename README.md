@@ -139,11 +139,13 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-  S[⬜ Silver Dataset] -->|🧾 Contracts (Pydantic)| V[Schema Validado]
-  V -->|✅ GE Suites| Q[Quality Gates]
-  Q -->|🟨 Scorecards| G[Gold Quality Scorecard]
-  G -->|🦆 Views| W[DuckDB Warehouse]
-  W -->|📊 BI| M[Metabase]
+  S[Silver Dataset] --> C[Contracts - Pydantic]
+  C --> V[Schema Validado]
+  V --> Q[GE Suites - Quality Gates]
+  Q --> G[Gold Quality Scorecard]
+  G --> W[DuckDB Warehouse]
+  W --> M[Metabase BI]
+
 ```
 
 ---
@@ -163,10 +165,10 @@ Regras aplicadas principalmente na Silver e validadas com GE:
 ## 🧰 Stack & Documentação
 
 <p align="left">
-  <a href="https://dagster.io/"><img src="https://dagster.io/images/brand/logos/dagster-primary-logo.png" height="28" alt="Dagster"></a>
+  <a href="https://dagster.io/"><img src="docs/assets/dagster.png" height="28" alt="Dagster"></a>
   <a href="https://www.python.org/"><img src="https://www.python.org/static/community_logos/python-logo.png" height="28" alt="Python"></a>
   <a href="https://duckdb.org/"><img src="https://duckdb.org/images/logo-dl/DuckDB_Logo.png" height="28" alt="DuckDB"></a>
-  <a href="https://greatexpectations.io/"><img src="https://greatexpectations.io/images/great_expectations_logo.svg" height="28" alt="Great Expectations"></a>
+  <a href="https://greatexpectations.io/"><img src="https://images.ctfassets.net/ycwst8v1r2x5/jbrHhqGtdpbZFhki5MqBp/e6a5f6b567173b39430a1a18d060cb8e/gx_logo_horiz_color.png?w=210&h=56&q=85&fm=webp" height="28" alt="Great Expectations"></a>
   <a href="https://www.metabase.com/"><img src="https://www.metabase.com/images/logo.svg" height="24" alt="Metabase"></a>
   <a href="https://www.docker.com/"><img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" height="28" alt="Docker"></a>
 </p>
