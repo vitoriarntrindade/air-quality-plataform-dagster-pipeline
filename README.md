@@ -173,7 +173,6 @@ Regras aplicadas principalmente na Silver e validadas com GE:
   <a href="https://www.docker.com/"><img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" height="28" alt="Docker"></a>
 </p>
 
-> 💡 Dica de portfólio: coloque também logos locais (PNG) em `docs/assets/logos/` para evitar links externos e deixar o README “perfeito” offline.
 
 | Tecnologia | Papel no projeto | Documentação |
 |---|---|---|
@@ -260,7 +259,7 @@ tree .
 
 ```bash
 git clone https://github.com/vitoriarntrindade/air-quality-plataform-dagster-pipeline
-cd air-quality-platform
+cd air-quality-platform-dagster-pipeline
 ```
 
 ---
